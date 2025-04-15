@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>test</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+   
+
+    .options-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      overflow: hidden;
+      min-width: 600px;
+      max-width: 900px;
+      width: calc(100% - 100px);
+      height: 400px;
+    }
+
+    .option {
+      position: relative;
+      overflow: hidden;
+      flex-grow: 1;
+      min-width: 60px;
+      margin: 10px;
+      border-radius: 30px;
+      cursor: pointer;
+      background-size: auto 120%;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+
+    .option.active {
+      flex-grow: 10000;
+      max-width: 600px;
+      margin: 0;
+      border-radius: 40px;
+      background-size: auto 100%;
+    }
+
+    .option .shadow {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 120px;
+      box-shadow: inset 0 -120px 120px -120px black;
+      transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+
+    .option.active .shadow {
+      box-shadow: inset 0 -120px 120px -100px black;
+    }
+
+    .option .label {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      display: flex;
+      align-items: center;
+      transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
+
+    .option.active .label {
+      bottom: 20px;
+      left: 20px;
+    }
+
+    .option .info {
+      margin-left: 10px;
+      color: white;
+    }
+
+    .option .info > div {
+      transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+    }
+
+    .option.active .info > div {
+      opacity: 1;
+    }
+
+    .option:not(.active) .info > div {
+      opacity: 0;
+    }
+
+    .main {
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .sub {
+      font-size: 22px;
+    }
+  </style>
+</head>
+<body>
+  <div class="options-container">
+    <div class="options" id="options"></div>
+  </div>
+
+  <script>
+    const optionsData = [
+      {
+        background: "linear-gradient(to top, rgba(0, 47, 93, 1), rgba(0, 47, 93, 0)), url('https://via.placeholder.com/800x600?text=Slide+1')",
+        main: "First ",
+        sub: "text",
+      },
+      {
+        background: "linear-gradient(to top, rgba(0, 47, 93, 1), rgba(0, 47, 93, 0)), url('https://via.placeholder.com/800x600?text=Slide+2')",
+        main: "text",
+        sub: "texts",
+      },
+      {
+        background: "linear-gradient(to top, rgba(0, 47, 93, 1), rgba(0, 47, 93, 0)), url('https://via.placeholder.com/800x600?text=Slide+3')",
+        main: "text",
+        sub: "text",
+      },
+      
+    
+    ];
+
+    const container = document.getElementById("options");
+
+    optionsData.forEach((option, index) => {
+      const div = document.createElement("div");
+      div.className = "option";
+      div.style.background = option.background;
+
+      div.innerHTML = `
+        <div class="shadow"></div>
+        <div class="label">
+          <div class="info">
+            <div class="main">${option.main}</div>
+            <div class="sub">${option.sub}</div>
+          </div>
+        </div>
+      `;
+
+      div.addEventListener("click", () => {
+        document.querySelectorAll(".option").forEach(opt => opt.classList.remove("active"));
+        div.classList.add("active");
+      });
+
+      if (index === 0) div.classList.add("active");
+      container.appendChild(div);
+    });
+  </script>
+</body>
+</html>
