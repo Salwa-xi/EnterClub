@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نادي ريادة الأعمال || الصفحة الرئيسية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Almarai', sans-serif;
+            margin: 0;
+        }
+
+        .navbar {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+        .navbar-brand img {
+            height: 70px; 
+        }
+
+        .navbar-nav .nav-link {
+            color: #6c757d;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #BAC378;
+        }
+
+        .navbar-nav .nav-item:nth-child(4) .nav-link {
+            color: #2a266a; 
+            font-weight: bolder;
+
+
+        }
+
+        .image-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            position: relative;
+            z-index: 1; 
+        }
+
+        .image-container {
+            position: relative;
+            width: 48%;
+            margin: 0 1%;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .image-section {
+                flex-direction: column-reverse; 
+                padding: 20px;
+            }
+
+            .image-container {
+                width: 100%; 
+                margin-bottom: 20px;
+            }
+
+            .image-container img {
+                border-radius: 15px;
+            }
+
+            .navbar-toggler {
+                margin-left: 20px; 
+                position: absolute;
+                right: 20px; 
+            }
+
+           
+}
+
+
+            .navbar-nav {
+                display: flex;
+                flex-direction: column; 
+                align-items: center; 
+            }
+        
+
+        @media (min-width: 769px) {
+            .navbar {
+                display: flex;
+                justify-content: center; 
+                padding: 10px 50px;
+            }
+
+            .navbar-brand {
+                margin-left: auto; 
+            }
+
+            .navbar-nav {
+                display: flex;
+                justify-content: center; 
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .navbar-brand img {
+                height: 90px; 
+            }
+
+            
+        }
+
+
+
+
+        @media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: white;
+    border: 2px solid #ECBF5D;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+
+
+
+        /*////////////////////end of nav-bar style////////////////////////*/
+ 
+
+      
+        .section-title {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        .nav-buttons .btn {
+            margin: 10px;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            background-color: transparent;
+            color: #6c757d;
+            border: 2px solid #6c757d;
+            transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nav-buttons .btn:hover {
+            background-color: #ECBF5D;
+            color: white;
+            border: 2px solid #ECBF5D;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 0 20px;
+        }
+
+        .card {
+            width: 30%;
+            min-width: 280px;
+            border: 3px solid #D8B974;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card-body h5 {
+            font-size: 20px;
+            color: #2a266a;
+            font-weight: bold;
+        }
+
+        .card-body p {
+            font-size: 16px;
+            color: #6c757d;
+        }
+
+        .btn-more,
+        .btn-more-bottom,
+        .btn-more-right {
+            display: block;
+            width: 150px;
+            text-align: center;
+            background-color: #ECBF5D;
+            padding: 12px;
+            color: white;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-more:hover,
+        .btn-more-bottom:hover,
+        .btn-more-right:hover {
+            background-color: #e88a21;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .btn-more {
+            margin: 20px auto;
+        }
+
+        .btn-more-right {
+            position: fixed;
+            right: 20px;
+            top: 80%;
+            margin: 0;
+        }
+
+        .btn-more-bottom {
+            margin: 40px auto;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+
+            .nav-buttons .btn {
+                flex: 1 1 auto;
+                min-width: 100px;
+            }
+        }
+
+
+        /*//////////////////////////end////////////////////////////////////*/
+
+        
+        .newsletter-section {
+            background-color: #ebeed0;
+            padding: 80px 0;
+            text-align: center;
+            color: #ffffff;
+            position: relative;
+        }
+
+        .newsletter-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ECBF5D;
+            margin-bottom: 15px;
+        }
+
+        .newsletter-description {
+            font-size: 18px;
+            color: #2a266a;
+            margin-bottom: 30px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .newsletter-input {
+            padding: 12px;
+            width: 70%;
+            border-radius: 25px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .newsletter-button {
+            background-color: #ECBF5D;
+            color: white;
+            padding: 12px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .newsletter-button:hover {
+            background-color: #e88a21;
+        }
+
+        @media (max-width: 768px) {
+            .newsletter-title {
+                font-size: 28px;
+            }
+
+            .newsletter-description {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+
+            .newsletter-form {
+                flex-direction: row;
+                gap: 15px;
+                max-width: 100%;
+                padding: 0 20px;
+            }
+
+            .newsletter-input {
+                width: 100%;
+            }
+
+            .newsletter-button {
+                width: 100%;
+                padding: 12px;
+            }
+
+            .nav-buttons .btn {
+                font-size: 14px;  
+                padding: 8px 15px; 
+            }
+
+            .nav-buttons {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                gap: 10px;
+            }
+        }
+
+
+        /*///////////////////////end of news-letter/////////////////////////////*/
+
+        
+    .footer {
+      background-image: url('Group 23 (1).png');
+      background-size: cover;
+      background-position: center;
+      padding: 50px 0;
+      color: white;
+      direction: rtl; 
+    }
+
+    .footer .container {
+      display: flex;
+      justify-content: flex-start; 
+      align-items: flex-start;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .footer .column {
+      text-align: right; 
+      min-width: 220px;
+    }
+
+    .footer h4 {
+      font-size: 22px;
+      font-weight: bold;
+      border-bottom: 2px solid white;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .footer a,
+    .footer p {
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .footer .social-icons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-start; 
+    }
+
+    .footer .social-icons a {
+      font-size: 18px;
+      color: white;
+    }
+
+    .footer .social-icons a:hover {
+      color: #ECB02E;
+    }
+
+    .footer .social-icons span {
+      font-size: 16px;
+    }
+
+    .footer .copyright {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 30px;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .footer .container {
+        flex-direction: column;
+        text-align: center; 
+        align-items: center;
+      }
+
+      .footer .column {
+        text-align: center; 
+      }
+
+      .footer .social-icons {
+        justify-content: center;
+      }
+    }
+    .footer .social-icons a {
+    font-size: 24px;
+    color: white;
+    margin: 10px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #ECB02E; 
+}
+
+    
+
+@media (max-width: 768px) {
+  .options-container {
+    height: auto !important;
+    padding: 20px 0;
+  }
+
+  .options {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .option {
+    width: 90% !important;
+    height: 250px !important;
+    flex-grow: unset !important;
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  .option.active {
+    flex-grow: unset !important;
+    background-size: cover !important;
+  }
+
+  .option .label {
+    bottom: 15px;
+    left: 15px;
+  }
+
+  .main {
+    font-size: 20px;
+  }
+
+  .sub {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .newsletter-title {
+    font-size: 28px;
+  }
+
+  .newsletter-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 15px;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .newsletter-input {
+    width: 100%;
+    font-size: 16px;
+    text-align: center; 
+  }
+
+  .newsletter-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px; 
+  }
+
+  .nav-buttons .btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+  }
+
+
+
+
+
+  
+
+
+  
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- navigation-bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="achievements.html">الإنجازات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nav-footer.html">الأنشطة والفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الرئيسية</a> 
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="شعار النادي">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+
+
+        <!--//////////////////end///////////////////-->
+
+
+    <section class="image-section">
+        <div class="image-container" id="left-image-container">
+            <div class="options-container" style="height: 300px;">
+                <div class="options" id="options"></div>
+              </div>
+              
+              <style>
+                .options-container {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  overflow: hidden;
+                }
+              
+                .options {
+                  display: flex;
+                  flex-direction: row;
+                  align-items: stretch;
+                  gap: 20px;
+                  width: 100%;
+                  max-width: 1100px;
+                  height: 100%;
+                }
+              
+                .option {
+                  position: relative;
+                  overflow: hidden;
+                  flex-grow: 1;
+                  min-width: 80px;
+                  border-radius: 30px;
+                  cursor: pointer;
+                  background-size: auto 120%;
+                  background-position: center;
+                  background-repeat: no-repeat;
+                  transition: 0.5s ease;
+                }
+              
+                .option.active {
+                  flex-grow: 1000;
+                  background-size: auto 80%;
+                }
+              
+                .option .shadow {
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  right: 0;
+                  height: 120px;
+                  box-shadow: inset 0 -120px 120px -120px black;
+                  transition: 0.5s ease;
+                }
+              
+                .option.active .shadow {
+                  box-shadow: inset 0 -120px 120px -100px black;
+                }
+              
+                .option .label {
+                  position: absolute;
+                  bottom: 10px;
+                  left: 10px;
+                  display: flex;
+                  align-items: center;
+                  transition: 0.5s ease;
+                }
+              
+                .option.active .label {
+                  bottom: 20px;
+                  left: 20px;
+                }
+              
+                .option .info {
+                  margin-left: 10px;
+                  color: white;
+                }
+              
+                .option .info > div {
+                  transition: 0.5s ease, opacity 0.5s ease-out;
+                }
+              
+                .option.active .info > div {
+                  opacity: 1;
+                }
+              
+                .option:not(.active) .info > div {
+                  opacity: 0;
+                }
+              
+                .main {
+                  font-size: 24px;
+                  font-weight: bold;
+                }
+              
+                .sub {
+                  font-size: 18px;
+                }
+
+
+                @media (max-width: 768px) {
+  .options {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .option {
+    display: none;
+  }
+
+  .option.active {
+    display: block;
+    width: 95%;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 40px;
+    background-size: cover !important;
+    background-position: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .option.active:active {
+    transform: rotate(-1.5deg) scale(0.97);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .option .label {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .main {
+    font-size: 22px;
+  }
+
+  .sub {
+    font-size: 16px;
+  }
+}
+
+              </style>
+              
+              <script>
+const optionsData = [
+  {
+    background: "linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.0) 100%), url('Frame 69.png')",
+    main: "نادي الحالمين",
+    sub: "حيث الإبداع والتطوير والرؤية المستقبلية",
+  },
+  {
+    background: "linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.0) 100%), url('Frame 69.png')",
+    main: "نادي الرواد",
+    sub: "حيث الريادة تصنع الفرق",
+  },
+  {
+    background: "linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.0) 100%), url('Frame 69.png')",
+    main: "نادي الإلهام",
+    sub: "منصة للإبداع وبذور التغيير",
+  },
+];
+
+
+
+const container = document.getElementById("options");
+
+optionsData.forEach((option, index) => {
+  const div = document.createElement("div");
+  div.className = "option";
+  div.style.background = option.background;
+
+  div.innerHTML = `
+    <div class="shadow"></div>
+    <div class="label">
+      <div class="info">
+        <div class="main">${option.main}</div>
+        <div class="sub">${option.sub}</div>
+      </div>
+    </div>
+  `;
+
+  div.addEventListener("click", () => {
+    document.querySelectorAll(".option").forEach(opt => opt.classList.remove("active"));
+    div.classList.add("active");
+  });
+
+  if (index === 0) div.classList.add("active"); 
+  container.appendChild(div);
+});
+
+              
+
+
+
+               
+              </script>
+                      </div>
+
+        <div class="image-container">
+            <img src="Group 25 (1).png" alt="صورة ثابتة" id="image2">
+        </div>
+    </section>
+
+
+    <!--//////////////////end///////////////////-->
+
+
+    <div class="section-title" style="color: #2a266a;">أنشطة نادي ريادة الأعمال</div>
+
+     <div class="nav-buttons">
+         <button class="btn" id="btn-masabiqat">مسابقات</button>
+         <button class="btn" id="btn-brograms">برامج</button>
+         <button class="btn" id="btn-liqat">لقاءات</button>
+     </div>
+ 
+     <div class="card-container" id="masabiqat-cards">
+         <div class="card">
+             <img src="ph.png" alt="Image 1">
+             <div class="card-body">
+                 <h5>هاكثون سابك</h5>
+                 <p>أقامت جامعة الملك عبدالعزيز ممثلة بمركز الابتكار وريادة الأعمال الحفل الخاص بمسابقة إعادة تعريف المستقبل تحت شعار (المبتكرون الشباب لمستقبل متغير)</p>
+             </div>
+         </div>
+         <div class="card">
+             <img src="ph.png" alt="Image 2">
+             <div class="card-body">
+                 <h5>هاكثون السياحة</h5>
+                 <p>أقامت جامعة الملك عبدالعزيز ممثلة بمركز الابتكار وريادة الأعمال الحفل الخاص بمسابقة إعادة تعريف المستقبل تحت شعار (المبتكرون الشباب لمستقبل متغير)</p>
+             </div>
+         </div>
+         <div class="card">
+             <img src="ph.png" alt="Image 3">
+             <div class="card-body">
+                 <h5>هاكثون ريادة الأعمال</h5>
+                 <p>أقامت جامعة الملك عبدالعزيز ممثلة بمركز الابتكار وريادة الأعمال الحفل الخاص بمسابقة إعادة تعريف المستقبل تحت شعار (المبتكرون الشباب لمستقبل متغير)</p>
+             </div>
+         </div>
+     </div>
+ 
+     <!-- Card- برامج -->
+     <div class="card-container hidden" id="brograms-cards">
+         <div class="card">
+             <img src="ph.png" alt="Image 4">
+             <div class="card-body">
+                 <h5>برنامج ريادة الأعمال</h5>
+                 <p>أقامت جامعة الملك عبدالعزيز ممثلة بمركز الابتكار وريادة الأعمال الحفل الخاص بمسابقة إعادة تعريف المستقبل تحت شعار (المبتكرون الشباب لمستقبل متغير)</p>
+             </div>
+         </div>
+         <div class="card">
+             <img src="ph.png" alt="Image 5">
+             <div class="card-body">
+                 <h5>برنامج تمويل المشاريع</h5>
+                 <p>أقامت جامعة الملك عبدالعزيز ممثلة بمركز الابتكار وريادة الأعمال الحفل الخاص بمسابقة إعادة تعريف المستقبل تحت شعار (المبتكرون الشباب لمستقبل متغير)</p>
+             </div>
+         </div>
+         <div class="card">
+             <img src="ph.png" alt="Image 6">
+             <div class="card-body">
+                 <h5>برنامج التدريب</h5>
+                 <p>أقامت جامعة الملك عبدالعزيز ممثلة بمركز الابتكار وريادة الأعمال الحفل الخاص بمسابقة إعادة تعريف المستقبل تحت شعار (المبتكرون الشباب لمستقبل متغير)</p>
+             </div>
+         </div>
+         <div class="card">
+             <img src="ph.png" alt="Image 7">
+             <div class="card-body">
+                 <h5>برنامج التطوير الشخصي</h5>
+                 <p>أقامت جامعة الملك عبدالعزيز ممثلة بمركز الابتكار وريادة الأعمال الحفل الخاص بمسابقة إعادة تعريف المستقبل تحت شعار (المبتكرون الشباب لمستقبل متغير)</p>
+             </div>
+         </div>
+     </div>
+ 
+     <!-- Card -لقاءات -->
+     <div class="card-container hidden" id="liqat-cards">
+         <div class="card">
+             <img src="ph.png" alt="Image 8">
+             <div class="card-body">
+                 <h5>لقاء ريادي</h5>
+                 <p>أقامت جامعة الملك عبدالعزيز ممثلة بمركز الابتكار وريادة الأعمال الحفل الخاص بمسابقة إعادة تعريف المستقبل تحت شعار (المبتكرون الشباب لمستقبل متغير)</p>
+             </div>
+         </div>
+         <div class="card">
+             <img src="ph.png" alt="Image 9">
+             <div class="card-body">
+                 <h5>لقاء رواد الأعمال</h5>
+                 <p>أقامت جامعة الملك عبدالعزيز ممثلة بمركز الابتكار وريادة الأعمال الحفل الخاص بمسابقة إعادة تعريف المستقبل تحت شعار (المبتكرون الشباب لمستقبل متغير)</p>
+             </div>
+         </div>
+         <div class="card">
+             <img src="ph.png" alt="Image 10">
+             <div class="card-body">
+                 <h5>لقاء مع مستثمرين</h5>
+                 <p>أقامت جامعة الملك عبدالعزيز ممثلة بمركز الابتكار وريادة الأعمال الحفل الخاص بمسابقة إعادة تعريف المستقبل تحت شعار (المبتكرون الشباب لمستقبل متغير)</p>
+             </div>
+         </div>
+         <div class="card">
+             <img src="ph.png" alt="Image 11">
+             <div class="card-body">
+                 <h5>لقاء تطوير أعمال</h5>
+                 <p>أقامت جامعة الملك عبدالعزيز ممثلة بمركز الابتكار وريادة الأعمال الحفل الخاص بمسابقة إعادة تعريف المستقبل تحت شعار (المبتكرون الشباب لمستقبل متغير)</p>
+             </div>
+         </div>
+         <div class="card">
+             <img src="ph.png" alt="Image 12">
+             <div class="card-body">
+                 <h5>لقاء مع الخريجين</h5>
+                 <p>أقامت جامعة الملك عبدالعزيز ممثلة بمركز الابتكار وريادة الأعمال الحفل الخاص بمسابقة إعادة تعريف المستقبل تحت شعار (المبتكرون الشباب لمستقبل متغير)</p>
+             </div>
+         </div>
+         <div class="card">
+             <img src="ph.png" alt="Image 13">
+             <div class="card-body">
+                 <h5>لقاء مع المؤسسين</h5>
+                 <p>أقامت جامعة الملك عبدالعزيز ممثلة بمركز الابتكار وريادة الأعمال الحفل الخاص بمسابقة إعادة تعريف المستقبل تحت شعار (المبتكرون الشباب لمستقبل متغير)</p>
+             </div>
+         </div>
+     </div>
+ 
+     <div class="btn-more-bottom">المزيد</div>
+ 
+     <script>
+         document.getElementById("btn-masabiqat").addEventListener("click", function () {
+             document.getElementById("masabiqat-cards").classList.remove("hidden");
+             document.getElementById("brograms-cards").classList.add("hidden");
+             document.getElementById("liqat-cards").classList.add("hidden");
+         });
+ 
+         document.getElementById("btn-brograms").addEventListener("click", function () {
+             document.getElementById("masabiqat-cards").classList.add("hidden");
+             document.getElementById("brograms-cards").classList.remove("hidden");
+             document.getElementById("liqat-cards").classList.add("hidden");
+         });
+ 
+         document.getElementById("btn-liqat").addEventListener("click", function () {
+             document.getElementById("masabiqat-cards").classList.add("hidden");
+             document.getElementById("brograms-cards").classList.add("hidden");
+             document.getElementById("liqat-cards").classList.remove("hidden");
+         });
+     </script>
+
+
+ 
+ <!--/////////////////////////end/////////////////////////////////-->
+
+
+
+   <!-- Newsletter Section -->
+    <div class="newsletter-section">
+        <div class="newsletter-title">نشرة ريادي</div>
+        <div class="newsletter-description">
+            اكتشف أبرز الأخبار في عالم ريادة الأعمال أسبوعيًا
+        </div>
+
+        <div class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="بريدك الإلكتروني">
+            <button class="newsletter-button">انضم إلينا</button>
+        </div>
+    </div>
+<!--///////////////////////////////////end ///////////////////////////////////////////-->
+
+
+
+<br>
+<br>
+<br>
+
+
+<!-- Footer Section -->
+<div class="footer">
+    <div class="container">
+        <div class="column logo-column">
+            <img src="logo (1).png" alt="شعار النادي" class="footer-logo">
+          </div>
+<style>
+    .footer .logo-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo {
+  max-width: 120px;
+  height: auto;
+  filter: brightness(0) invert(1); 
+}
+
+</style>          
+        <div class="column nav-links">
+            <h4>رائد الأعمال</h4>
+            <a href="#"><i class="fas fa-lightbulb"></i> يلهم</a>
+            <a href="#"><i class="fas fa-cogs"></i> يمكن</a>
+            <a href="#"><i class="fas fa-book-open"></i> يثقف</a>
+            <a href="#"><i class="fas fa-users"></i> منصة الحالمين</a>
+            <a href="#"><i class="fas fa-trophy"></i> النادي الأكثر تأثيرًا</a>
+        </div>
+
+        <div class="column nav-links">
+            <h4>تواصل معنا</h4>
+            <a href="mailto:email@example.com">
+                <i class="fas fa-envelope"></i> البريد الالكتروني
+            </a>
+            <a href="tel:+123456789">
+                <i class="fas fa-phone"></i> الهاتف
+            </a>
+            <a href="https://www.google.com/maps/place/Example+Location">
+                <i class="fas fa-map-marker-alt"></i> الموقع
+            </a>
+        </div>
+
+        <div class="column">
+            <h4>منصات التواصل الاجتماعي</h4>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/EntrClub_kau" target="_blank" class="fab fa-instagram" title="Instagram"></a>
+                <a href="https://www.linkedin.com/company/EntrClub_kau" target="_blank" class="fab fa-linkedin" title="LinkedIn"></a>
+                <a href="https://www.snapchat.com/add/EntrClub_kau" target="_blank" class="fab fa-snapchat" title="Snapchat"></a>
+                <a href="https://twitter.com/EntrClub_kau" target="_blank" class="fab fa-x-twitter" title="Twitter"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>&#169; 2025 جميع الحقوق محفوظة | نادي ريادة الأعمال</p>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
