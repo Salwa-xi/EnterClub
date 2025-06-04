@@ -1,0 +1,676 @@
+<!-- activities-events.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الأنشطة والفعاليات</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+   body {
+            font-family: 'Almarai', sans-serif;
+            margin: 0;
+        }
+
+        .navbar {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+        .navbar-brand img {
+            height: 70px; 
+        }
+
+        .navbar-nav .nav-link {
+            color: #6c757d;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #BAC378;
+        }
+
+        .navbar-nav .nav-item:nth-child(3) .nav-link {
+            color: #2a266a; 
+            font-weight: bolder;
+
+
+        }
+
+        .image-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            position: relative;
+            z-index: 1; 
+        }
+
+        .image-container {
+            position: relative;
+            width: 48%;
+            margin: 0 1%;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .image-section {
+                flex-direction: column-reverse; 
+                padding: 20px;
+            }
+
+            .image-container {
+                width: 100%; 
+                margin-bottom: 20px;
+            }
+
+            .image-container img {
+                border-radius: 15px;
+            }
+
+            .navbar-toggler {
+                margin-left: 20px; 
+                position: absolute;
+                right: 20px; 
+            }
+
+           
+}
+
+
+            .navbar-nav {
+                display: flex;
+                flex-direction: column; 
+                align-items: center; 
+            }
+        
+
+        @media (min-width: 769px) {
+            .navbar {
+                display: flex;
+                justify-content: center; 
+                padding: 10px 50px;
+            }
+
+            .navbar-brand {
+                margin-left: auto; 
+            }
+
+            .navbar-nav {
+                display: flex;
+                justify-content: center; 
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .navbar-brand img {
+                height: 90px; 
+            }
+
+            
+        }
+
+
+
+
+        @media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: white;
+    border: 2px solid #ECBF5D;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+
+
+        .image-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            position: relative;
+            z-index: 1; 
+        }
+
+        .image-container {
+            position: relative;
+            width: 48%;
+            margin: 0 1%;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .image-section {
+                flex-direction: column-reverse; 
+                padding: 20px;
+            }
+
+            .image-container {
+                width: 100%; 
+                margin-bottom: 20px;
+            }
+
+            .image-container img {
+                border-radius: 15px;
+            }
+
+            .navbar-toggler {
+                margin-left: 20px; 
+                position: absolute;
+                right: 20px; 
+            }
+
+           
+}
+
+
+            .navbar-nav {
+                display: flex;
+                flex-direction: column; 
+                align-items: center; 
+            }
+        
+
+        @media (min-width: 769px) {
+            .navbar {
+                display: flex;
+                justify-content: center; 
+                padding: 10px 50px;
+            }
+
+            .navbar-brand {
+                margin-left: auto; 
+            }
+
+            .navbar-nav {
+                display: flex;
+                justify-content: center; 
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .navbar-brand img {
+                height: 90px; 
+            }
+
+            
+        }
+
+
+
+
+        @media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: white;
+    border: 2px solid #ECBF5D;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+
+    .custom-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-bottom: none;
+      padding-bottom: 0;
+      flex-wrap: wrap;
+    }
+    .custom-nav .nav-link {
+      background-color: #eeeeee;
+      color: #212529;
+      border-radius: 50px;
+      padding: 10px 40px;
+      margin: 0 5px;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+    .custom-nav .nav-link:hover,
+    .custom-nav .nav-link.active {
+      background-color: #ECBF5D;
+      font-weight: bold;
+    }
+    .activity-card {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .activity-header {
+      display: flex;
+      align-items: center;
+    }
+    .speaker-photo {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin-left: 15px;
+      object-fit: cover;
+    }
+    .activity-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+    .activity-presenter {
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+    .info-item {
+      display: flex;
+      align-items: center;
+      margin: 8px 0;
+      font-size: 0.9rem;
+      color: #333;
+    }
+    .info-item i {
+      color: #ECBF5D;
+      margin-left: 8px;
+    }
+    .btn-register {
+      background-color: #ECBF5D;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 20px;
+      margin-bottom: 10px;
+    }
+    .btn-details {
+      border: 1px solid #6c757d;
+      color: #6c757d;
+      background-color: transparent;
+      border-radius: 20px;
+      padding: 8px 20px;
+    }
+    .footer {
+      background-image: url('Group 23 (1).png');
+      background-size: cover;
+      background-position: center;
+      padding: 50px 0;
+      color: white;
+    }
+    .footer .container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .footer h4 {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .footer a,
+    .footer p {
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: white;
+      text-decoration: none;
+    }
+    .footer .social-icons a {
+      font-size: 18px;
+      color: white;
+      margin-right: 10px;
+    }
+    .footer .social-icons a:hover {
+      color: #ECBF5D;
+    }
+    .footer .copyright {
+      text-align: center;
+      font-size: 14px;
+      color: #ccc;
+      margin-top: 30px;
+    }
+ 
+
+    .navbar {
+  min-height: 100px; /* الطول الجديد */
+  padding: 20px 50px;
+  background-color: rgb(192, 206, 44);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+  </style>
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container-fluid position-relative">
+
+    <!-- الشعار على اليمين -->
+    <a class="navbar-brand position-absolute end-0 me-3" href="#">
+      <img src="Group 24.png" alt="شعار النادي" style="height: 70px;">
+    </a>
+
+    <!-- القائمة في المنتصف -->
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">الرئيسية</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about-us.html">من نحن</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="nav-footer.html">الأنشطة والفعاليات</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="achievements.html">الإنجازات</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- زر الجوال -->
+    <button class="navbar-toggler position-absolute start-0 ms-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+
+
+
+  <div class="container py-5">
+    <ul class="nav nav-pills custom-nav mb-5">
+      <li class="nav-item"><a class="nav-link active" href="#">لقاءات</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">برامج</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">مسابقات</a></li>
+    </ul>
+    <div class="row" id="activities-container">
+      <!-- سيتم إدراج البطاقات هنا من ملف JS أو يدويًا -->
+
+      <!-- سيتم إدراج البطاقات هنا من ملف JS أو يدويًا -->
+
+<!-- قسم اللقاءات -->
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="meetings" role="tabpanel">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="card activity-card h-100">
+          <div class="activity-content">
+            <div class="activity-header">
+              <img class="speaker-photo" src="default-speaker.jpeg" alt="صورة د.دلال الصالحي">
+              <div class="speaker-info">
+                <h5 class="activity-title">كيف تسوق لمشروعك؟</h5>
+                <p class="activity-presenter">د.دلال الصالحي</p>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="activity-info">
+              <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>عن بعد</span></div>
+              <div class="info-item"><i class="fas fa-calendar-day"></i><span>يوم السبت</span></div>
+              <div class="info-item"><i class="fas fa-clock"></i><span>8:00 مساءً</span></div>
+            </div>
+            <div class="action-buttons">
+              <span class="text-muted align-self-center">التسجيل مغلق</span>
+              <button class="btn btn-details">تفاصيل</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card activity-card h-100">
+          <div class="activity-content">
+            <div class="activity-header">
+              <img class="speaker-photo" src="default-speaker.jpeg" alt="صورة فواز تركيستاني">
+              <div class="speaker-info">
+                <h5 class="activity-title">بناء العلامة التجارية</h5>
+                <p class="activity-presenter">فواز تركيستاني</p>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="activity-info">
+              <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>عن بعد</span></div>
+              <div class="info-item"><i class="fas fa-calendar-day"></i><span>يوم الجمعة</span></div>
+              <div class="info-item"><i class="fas fa-clock"></i><span>6:00 مساءً</span></div>
+            </div>
+            <div class="action-buttons">
+              <span class="text-muted align-self-center">التسجيل مغلق</span>
+              <button class="btn btn-details">تفاصيل</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="programs" role="tabpanel">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="card activity-card h-100">
+          <div class="activity-content">
+            <div class="activity-header">
+              <img class="speaker-photo" src="eventPresenter.jpeg" alt="صورة سعود الصيعري">
+              <div class="speaker-info">
+                <h5 class="activity-title">إدارة المخاطر</h5>
+                <p class="activity-presenter">سعود الصيعري</p>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="activity-info">
+              <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>عن بعد</span></div>
+              <div class="info-item"><i class="fas fa-calendar-day"></i><span>يوم الأربعاء</span></div>
+              <div class="info-item"><i class="fas fa-clock"></i><span>5:00 مساءً</span></div>
+            </div>
+            <div class="action-buttons">
+              <span class="text-muted align-self-center">التسجيل مغلق</span>
+              <button class="btn btn-details">تفاصيل</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card activity-card h-100">
+          <div class="activity-content">
+            <div class="activity-header">
+              <img class="speaker-photo" src="default-speaker.jpeg" alt="صورة أ.د.سمر السقاف">
+              <div class="speaker-info">
+                <h5 class="activity-title">مهارات التفاوض</h5>
+                <p class="activity-presenter">أ.د.سمر السقاف</p>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="activity-info">
+              <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>عن بعد</span></div>
+              <div class="info-item"><i class="fas fa-calendar-day"></i><span>يوم الإثنين</span></div>
+              <div class="info-item"><i class="fas fa-clock"></i><span>6:30 مساءً</span></div>
+            </div>
+            <div class="action-buttons">
+              <span class="text-muted align-self-center">التسجيل مغلق</span>
+              <button class="btn btn-details">تفاصيل</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card activity-card h-100">
+          <div class="activity-content">
+            <div class="activity-header">
+              <img class="speaker-photo" src="default-speaker.jpeg" alt="صورة أرياض البلوشي">
+              <div class="speaker-info">
+                <h5 class="activity-title">التمويل للمشاريع</h5>
+                <p class="activity-presenter">أرياض البلوشي</p>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="activity-info">
+              <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>عن بعد</span></div>
+              <div class="info-item"><i class="fas fa-calendar-day"></i><span>يوم الثلاثاء</span></div>
+              <div class="info-item"><i class="fas fa-clock"></i><span>8:30 مساءً</span></div>
+            </div>
+            <div class="action-buttons">
+        <span class="text-muted align-self-center">التسجيل مغلق</span>
+                <a herf="activities-events.html"class="btn btn-register">تفاصيل </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="competitions" role="tabpanel">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <div class="card activity-card h-100">
+          <div class="activity-content">
+            <div class="activity-header">
+              <img class="speaker-photo" src="default-speaker.jpeg" alt="صورة م. نورة العتيبي">
+              <div class="speaker-info">
+                <h5 class="activity-title">تحدي الريادة</h5>
+                <p class="activity-presenter">م. نورة العتيبي</p>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="activity-info">
+              <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>حضوري</span></div>
+              <div class="info-item"><i class="fas fa-calendar-day"></i><span>يوم الأحد</span></div>
+              <div class="info-item"><i class="fas fa-clock"></i><span>4:00 مساءً</span></div>
+            </div>
+            <div class="action-buttons">
+              <span class="text-muted align-self-center">التسجيل مغلق</span>
+              <button class="btn btn-details">تفاصيل</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card activity-card h-100">
+          <div class="activity-content">
+            <div class="activity-header">
+              <img class="speaker-photo" src="default-speaker.jpeg" alt="صورة أ. خالد بخش">
+              <div class="speaker-info">
+                <h5 class="activity-title">مسابقة الأفكار</h5>
+                <p class="activity-presenter">أ. خالد بخش</p>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="activity-info">
+              <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>عن بعد</span></div>
+              <div class="info-item"><i class="fas fa-calendar-day"></i><span>يوم الخميس</span></div>
+              <div class="info-item"><i class="fas fa-clock"></i><span>3:00 مساءً</span></div>
+            </div>
+            <div class="action-buttons">
+              <span class="text-muted align-self-center">التسجيل مغلق</span>
+              <button class="btn btn-details">تفاصيل</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const navLinks = document.querySelectorAll('.custom-nav .nav-link');
+  const tabPanes = document.querySelectorAll('.tab-pane');
+
+  navLinks.forEach((link, index) => {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      navLinks.forEach(l => l.classList.remove('active'));
+      tabPanes.forEach(p => p.classList.remove('show', 'active'));
+      this.classList.add('active');
+      tabPanes[index].classList.add('show', 'active');
+    });
+  });
+</script>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div>
+        <img src="logo (1).png" alt="شعار النادي" style="max-width: 120px; filter: brightness(0) invert(1);">
+      </div>
+      <div>
+        <h4>رائد الأعمال</h4>
+        <a href="#"><i class="fas fa-lightbulb"></i> يلهم</a>
+        <a href="#"><i class="fas fa-cogs"></i> يمكن</a>
+        <a href="#"><i class="fas fa-book-open"></i> يثقف</a>
+        <a href="#"><i class="fas fa-users"></i> منصة الحالمين</a>
+        <a href="#"><i class="fas fa-trophy"></i> النادي الأكثر تأثيرًا</a>
+      </div>
+      <div>
+        <h4>تواصل معنا</h4>
+        <a href="mailto:email@example.com"><i class="fas fa-envelope"></i> البريد الإلكتروني</a>
+        <a href="tel:+123456789"><i class="fas fa-phone"></i> الهاتف</a>
+        <a href="https://www.google.com/maps/place/Example+Location"><i class="fas fa-map-marker-alt"></i> الموقع</a>
+      </div>
+      <div>
+        <h4>منصات التواصل</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/EntrClub_kau" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/EntrClub_kau" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.snapchat.com/add/EntrClub_kau" target="_blank"><i class="fab fa-snapchat"></i></a>
+          <a href="https://twitter.com/EntrClub_kau" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 جميع الحقوق محفوظة | نادي ريادة الأعمال</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

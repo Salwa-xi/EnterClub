@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نادي ريادة الأعمال || الأنشطة </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Almarai', sans-serif;
+      margin: 0;
+        }
+
+  /* ------------- Navbar Style ------------- */
+
+
+      .navbar {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+        .navbar-brand img {
+            height: 70px; 
+        }
+
+        .navbar-nav .nav-link {
+            color: #6c757d;
+            font-size: 18px;
+            margin-left: 20px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #BAC378;
+        }
+
+      
+        .navbar-nav .nav-item:nth-child(2) .nav-link {
+            color: #2a266a; 
+            font-weight: bolder;
+
+
+        }
+        
+
+        .image-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            position: relative;
+            z-index: 1; 
+        }
+
+        .image-container {
+            position: relative;
+            width: 48%;
+            margin: 0 1%;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .image-section {
+                flex-direction: column-reverse; 
+                padding: 20px;
+            }
+
+            .image-container {
+                width: 100%; 
+                margin-bottom: 20px;
+            }
+
+            .image-container img {
+                border-radius: 15px;
+            }
+
+            .navbar-toggler {
+                margin-left: 20px; 
+                position: absolute;
+                right: 20px; 
+            }
+
+           
+}
+
+
+            .navbar-nav {
+                display: flex;
+                flex-direction: column; 
+                align-items: center; 
+            }
+        
+
+        @media (min-width: 769px) {
+            .navbar {
+                display: flex;
+                justify-content: center; 
+                padding: 10px 50px;
+            }
+
+            .navbar-brand {
+                margin-left: auto; 
+            }
+
+            .navbar-nav {
+                display: flex;
+                justify-content: center; 
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .navbar-brand img {
+                height: 90px; 
+            }
+
+            
+        }
+
+
+
+
+        @media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: white;
+    border: 2px solid #ECBF5D;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+
+
+    /* ------------- Footer Style ------------- */
+    .footer {
+      background-image: url('Group 23 (1).png');
+      background-size: cover;
+      background-position: center;
+      padding: 50px 0;
+      color: white;
+      direction: rtl;
+    }
+
+    .footer .container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .footer .column {
+      text-align: right;
+      min-width: 220px;
+    }
+
+    .footer h4 {
+      font-size: 22px;
+      font-weight: bold;
+      border-bottom: 2px solid white;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .footer a,
+    .footer p {
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .footer .social-icons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    .footer .social-icons a {
+      font-size: 18px;
+      color: white;
+    }
+
+    .footer .social-icons a:hover {
+      color: #ECB02E;
+    }
+
+    .footer .social-icons span {
+      font-size: 16px;
+    }
+
+    .footer .copyright {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 30px;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .footer .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+      .footer .column {
+        text-align: center;
+      }
+
+      .footer .social-icons {
+        justify-content: center;
+      }
+    }
+
+    .register-btn:hover {
+    background-color: #ffffff !important;
+    color: #ECBF5D !important;
+    border: 1px solid #ECBF5D;
+    transition: all 0.3s ease;
+  }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="achievements.html">الإنجازات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nav-footer.html">الأنشطة والفعاليات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">من نحن</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">الرئيسية</a> 
+                </li>
+            </ul>
+        </div>
+        <a class="navbar-brand" href="#">
+            <img src="Group 24.png" alt="شعار النادي">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+
+  <!-- 👇👇👇 هنا يبدأ المحتوى للصفحة 👇👇👇 -->
+ 
+<section class="event-section text-center py-5" style="background-color: #ffffff; font-family: 'Almarai', sans-serif;">
+    <div class="container">
+      <h2 class="mb-2 mt-5" style="color: #BAC378;">لقــــــاء</h2>
+      <h2 class="fw-bold mb-5" style="color: #312D72;">التمويــل للمشاريــع الناشئــة</h2>
+      
+      <div class="card shadow-sm border-0 p-4 mx-auto mt-5 mb-5" style="background-color: #F6F6F6; max-width: 900px; border-radius: 16px;">
+        <div class="row align-items-center">
+          <div class="col-md-8 text-md-end text-center mb-4">
+
+            <h4 class="fw-bold mb-3" style="color: #312D72;">
+              عندك فكرة لمشروع ناشئ وتبحث عن تمويل؟
+            </h4>
+
+            <p class="text-muted mb-3">
+              "انضموا إلينا في لقاء "التمويل للمشاريع الناشئة<br>
+              عشان تكتشفون أسرار التمويل و تسمعون قصص نجاح لمشاريع حقيقية مع 
+              <span class="fw-bold" style="color: #BAC378;">أ. رياض البلوشي
+              </span> مؤسس معهد 
+              <span class="fw-bold text-dark" dir="ltr">Tutorings
+              </span>&nbsp;و شغوف في مجال ريادة الأعمال والتخطيط
+            </p>
+            
+            <div style="max-width: 420px;" class="ms-md-auto me-md-0 mx-auto mt-4">
+
+              <div class="d-flex flex-wrap justify-content-between mb-4 text-muted">
+                <span> 7:00 PM - 8:00 PM 
+                   <i class="fa-solid fa-clock me-2" style="color: #ECBF5D;"></i></span>
+                <span> يوم السبت 
+                  <i class="fa-solid fa-calendar-days me-2" style="color: #ECBF5D;"></i></span>
+                <span> ZOOM - عن بعد 
+                  <i class="fa-solid fa-location-dot me-2" style="color: #ECBF5D;"></i> </span>
+              </div>
+
+              <a href="#" class="btn py-2 w-100 register-btn" style="background-color: #ECBF5D; color: white; border-radius: 25px;">
+                سجل الآن
+              </a>
+
+            </div>
+            
+          </div>
+  
+
+          <div class="col-md-4 text-center mt-4 mt-md-0">
+            <img src="personal-img.png" alt="رياض البلوشي" class="img-fluid rounded" style="max-width: 180px;">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- ☝️☝️☝️ نهاية المحتوى ☝️☝️☝️ -->
+
+ 
+<!-- Footer Section -->
+<div class="footer">
+  <div class="container">
+      <div class="column logo-column">
+          <img src="logo (1).png" alt="شعار النادي" class="footer-logo">
+        </div>
+<style>
+  .footer .logo-column {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.footer-logo {
+max-width: 120px;
+height: auto;
+filter: brightness(0) invert(1); 
+}
+
+</style>          
+      <div class="column nav-links">
+          <h4>رائد الأعمال</h4>
+          <a href="#"><i class="fas fa-lightbulb"></i> يلهم</a>
+          <a href="#"><i class="fas fa-cogs"></i> يمكن</a>
+          <a href="#"><i class="fas fa-book-open"></i> يثقف</a>
+          <a href="#"><i class="fas fa-users"></i> منصة الحالمين</a>
+          <a href="#"><i class="fas fa-trophy"></i> النادي الأكثر تأثيرًا</a>
+      </div>
+
+      <div class="column nav-links">
+          <h4>تواصل معنا</h4>
+          <a href= email@example.com">
+              <i class="fas fa-envelope"></i> البريد الالكتروني
+          </a>
+          <a href="tel:+123456789">
+              <i class="fas fa-phone"></i> الهاتف
+          </a>
+          <a href="https://www.google.com/maps/place/Example+Location">
+              <i class="fas fa-map-marker-alt"></i> الموقع
+          </a>
+      </div>
+
+      <div class="column">
+          <h4>منصات التواصل الاجتماعي</h4>
+          <div class="social-icons">
+              <a href="https://www.instagram.com/EntrClub_kau" target="_blank" class="fab fa-instagram" title="Instagram"></a>
+              <a href="https://www.linkedin.com/company/EntrClub_kau" target="_blank" class="fab fa-linkedin" title="LinkedIn"></a>
+              <a href="https://www.snapchat.com/add/EntrClub_kau" target="_blank" class="fab fa-snapchat" title="Snapchat"></a>
+              <a href="https://twitter.com/EntrClub_kau" target="_blank" class="fab fa-x-twitter" title="Twitter"></a>
+          </div>
+      </div>
+  </div>
+
+  <div class="copyright">
+      <p>&#169; 2025 جميع الحقوق محفوظة | نادي ريادة الأعمال</p>
+  </div>
+</div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
