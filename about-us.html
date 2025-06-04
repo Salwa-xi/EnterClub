@@ -588,10 +588,51 @@
 
 @media (max-width: 768px) {
   .partner-logo {
-    max-height: 60px; /* أصغر كثير على الجوال */
-    margin: 5px;
+    max-height: 40px; /* أصغر كثير على الجوال */
+    margin: 0px;
   }
 }
+
+
+@media (max-width: 768px) {
+  .about-row-with-bg {
+    flex-direction: column-reverse !important;
+    text-align: center !important;
+    padding: 0px !important;
+  }
+
+  .about-text {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 70% !important;
+  }
+
+  .about-text p,
+  .about-text .card-body,
+  .about-text .card-body-small {
+    text-align: center !important;
+    margin: 10px 0 !important;
+  }
+
+  .about-image {
+    display: flex !important;
+    justify-content: center !important;
+    width: 85% !important;
+  }
+
+  .about-image img {
+    max-width: 70% !important;
+    height: auto !important;
+    border-radius: 15px !important;
+  }
+}
+
+
+
+
+
 
 
   </style>
