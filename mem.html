@@ -300,6 +300,22 @@
   }
 }
 
+
+.image-frame {
+  padding: 6px;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #ECBF5D, #2a266a);
+  display: inline-block;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.image-frame img {
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
   </style>
 </head>
 
@@ -332,22 +348,30 @@
       <button class="year-btn" onclick="showYear('2025')">سنة 2025</button>
     </div>
 
-    <div id="year-2024">
-      <h2 class="section-title">أعضاء النادي لسنة 2024</h2>
-      <div class="d-flex justify-content-center align-items-center" style="min-height: 400px;">
-       <div class="spinning-wrapper">
-  <img src="mem2024.jpg" alt="عضو النادي" class="main-member-img" />
-</div>
+   <div id="year-2024">
+  <h2 class="section-title">أعضاء النادي لسنة 2024</h2>
+  <br>
+  <div class="d-flex justify-content-center align-items-center" style="min-height: 400px;">
+    <div class="spinning-wrapper">
+      <div class="image-frame">
+        <img src="mem2024.jpg" alt="عضو النادي" class="main-member-img" />
       </div>
     </div>
+  </div>
+</div>
 
-    <div id="year-2025" style="display: none;">
-      <h2 class="section-title">أعضاء النادي لسنة 2025</h2>
-      <div class="d-flex justify-content-center align-items-center" style="min-height: 400px;">
- <div class="spinning-wrapper">
-  <a href="https://www.linkedin.com/company/kau-entrepreneurship-club/" target="_blank">
-    <img src="mem2025.jpg" alt="عضو النادي" class="main-member-img" />
-  </a>
+<div id="year-2025" style="display: none;">
+  <h2 class="section-title">أعضاء النادي لسنة 2025</h2>
+  <br>
+  <div class="d-flex justify-content-center align-items-center" style="min-height: 400px;">
+    <div class="spinning-wrapper">
+      <div class="image-frame">
+        <a href="https://www.linkedin.com/company/kau-entrepreneurship-club/" target="_blank">
+          <img src="mem2025.jpg" alt="عضو النادي" class="main-member-img" />
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 
 
