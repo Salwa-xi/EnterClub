@@ -127,8 +127,8 @@
     }
 
     .main-member-img {
-      width: 99%;
-      height: 98%;
+      width: 95%;
+      height: 95%;
       border-radius: 20px;
       object-fit: cover;
       position: relative;
@@ -262,10 +262,35 @@
   }
 
   .main-member-img {
-    width: 98%;
-    height: 98%;
+    width: 120%;
+    height: 150%;
     border-radius: 20px;
     object-fit: cover;
+  }
+
+  .spinning-border {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .main-member-img {
+    width: 100%;
+    object-fit: contain; /* تبقي الصورة كاملة بدون قص */
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .spinning-wrapper {
+    width: 90vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .spinning-border {
@@ -311,19 +336,20 @@
       <h2 class="section-title">أعضاء النادي لسنة 2024</h2>
       <div class="d-flex justify-content-center align-items-center" style="min-height: 400px;">
        <div class="spinning-wrapper">
-  <div class="spinning-border"></div>
   <img src="mem2024.jpg" alt="عضو النادي" class="main-member-img" />
 </div>
-
+      </div>
     </div>
 
     <div id="year-2025" style="display: none;">
       <h2 class="section-title">أعضاء النادي لسنة 2025</h2>
       <div class="d-flex justify-content-center align-items-center" style="min-height: 400px;">
-        <div class="spinning-wrapper">
-  <div class="spinning-border"></div>
-  <img src="mem2025.jpg" alt="عضو النادي" class="main-member-img" />
+ <div class="spinning-wrapper">
+  <a href="https://www.linkedin.com/company/kau-entrepreneurship-club/" target="_blank">
+    <img src="mem2025.jpg" alt="عضو النادي" class="main-member-img" />
+  </a>
 </div>
+
 
       </div>
     </div>
