@@ -14,73 +14,153 @@
       margin: 0;
     }
 
+  .navbar {
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
 
-    
-    .navbar {
-      padding: 10px 50px;
-      display: flex;
-      justify-content: center;
-      background-color: white;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-      position: relative;
-      z-index: 10;
-    }
+        .navbar-brand img {
+            height: 70px; 
+        }
 
-    .navbar-brand img {
-      height: 70px;
-    }
+        .navbar-nav .nav-link {
+            color: #6c757d;
+            font-size: 18px;
+            margin-left: 20px;
+        }
 
-    .navbar-nav .nav-link {
-      color: #6c757d;
-      font-size: 18px;
-      margin-left: 20px;
-    }
+        .navbar-nav .nav-link:hover {
+            color: #BAC378;
+        }
 
-    .navbar-nav .nav-link:hover {
-      color: #BAC378;
-    }
+        .navbar-nav .nav-item:nth-child(4) .nav-link {
+            color: #2a266a; 
+            font-weight: bolder;
 
-    .navbar-nav .nav-item:nth-child(4) .nav-link {
-      color: #2a266a;
-      font-weight: bolder;
-    }
 
-    @media (max-width: 768px) {
-      .navbar-toggler {
-        margin-left: 20px;
-        position: absolute;
-        right: 20px;
-      }
+        }
 
-      .navbar-collapse {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 80%;
-        background-color: white;
-        border: 2px solid #ECBF5D;
-        border-radius: 20px;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-        z-index: 999;
-        text-align: center;
-        padding: 15px 0;
-      }
+        .image-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            position: relative;
+            z-index: 1; 
+        }
 
-      .navbar-nav {
-        flex-direction: column;
-        align-items: center;
-      }
+        .image-container {
+            position: relative;
+            width: 48%;
+            margin: 0 1%;
+        }
 
-      .navbar-nav .nav-link {
-        padding: 10px;
-        font-size: 16px;
-      }
-    }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .image-section {
+                flex-direction: column-reverse; 
+                padding: 20px;
+            }
+
+            .image-container {
+                width: 100%; 
+                margin-bottom: 20px;
+            }
+
+            .image-container img {
+                border-radius: 15px;
+            }
+
+            .navbar-toggler {
+                margin-left: 20px; 
+                position: absolute;
+                right: 20px; 
+            }
+
+           
+}
+
+
+            .navbar-nav {
+                display: flex;
+                flex-direction: column; 
+                align-items: center; 
+            }
+        
+
+        @media (min-width: 769px) {
+            .navbar {
+                display: flex;
+                justify-content: center; 
+                padding: 10px 50px;
+            }
+
+            .navbar-brand {
+                margin-left: auto; 
+            }
+
+            .navbar-nav {
+                display: flex;
+                justify-content: center; 
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .navbar-brand img {
+                height: 90px; 
+            }
+
+            
+        }
+
+
+
+
+        @media (max-width: 768px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: white;
+    border: 2px solid #ECBF5D;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+
+
+
 
     .section-title {
       font-size: 2rem;
-      margin: 30px 0;
+      margin: 50px 0;
       color: #2a266a;
       text-align: center;
     }
