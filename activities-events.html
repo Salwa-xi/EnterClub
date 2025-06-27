@@ -274,6 +274,95 @@
     .event-section .d-flex.flex-wrap span {
       margin-bottom: 8px;
     }
+
+
+    
+    .footer .container {
+      display: flex;
+      justify-content: flex-start; 
+      align-items: flex-start;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+
+    .footer .column {
+      text-align: right; 
+      min-width: 220px;
+    }
+
+    .footer h4 {
+      font-size: 22px;
+      font-weight: bold;
+      border-bottom: 2px solid white;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .footer a,
+    .footer p {
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .footer .social-icons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-start; 
+    }
+
+    .footer .social-icons a {
+      font-size: 18px;
+      color: white;
+    }
+
+    .footer .social-icons a:hover {
+      color: #ECB02E;
+    }
+
+    .footer .social-icons span {
+      font-size: 16px;
+    }
+
+    .footer .copyright {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 30px;
+      color: #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .footer .container {
+        flex-direction: column;
+        text-align: center; 
+        align-items: center;
+      }
+
+      .footer .column {
+        text-align: center; 
+      }
+
+      .footer .social-icons {
+        justify-content: center;
+      }
+    }
+    .footer .social-icons a {
+    font-size: 24px;
+    color: white;
+    margin: 10px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #ECB02E; 
+}
+
   
   </style>
 </head>
